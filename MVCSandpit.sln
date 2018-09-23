@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCSandpit", "MVCSandpit\MVCSandpit.csproj", "{CA9E7454-EAEF-4375-9DA6-EF4435D1D40E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCSandpit.Tests", "MVCSandpit.Tests\MVCSandpit.Tests.csproj", "{F96ABC1C-890E-4C7B-B23D-031CDDD62492}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCSandpit.Data", "MVCSandpit.Data\MVCSandpit.Data.csproj", "{40B59A32-5F93-42A0-A1D2-8613210E4C8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA9E7454-EAEF-4375-9DA6-EF4435D1D40E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA9E7454-EAEF-4375-9DA6-EF4435D1D40E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA9E7454-EAEF-4375-9DA6-EF4435D1D40E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA9E7454-EAEF-4375-9DA6-EF4435D1D40E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F96ABC1C-890E-4C7B-B23D-031CDDD62492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F96ABC1C-890E-4C7B-B23D-031CDDD62492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F96ABC1C-890E-4C7B-B23D-031CDDD62492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F96ABC1C-890E-4C7B-B23D-031CDDD62492}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40B59A32-5F93-42A0-A1D2-8613210E4C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40B59A32-5F93-42A0-A1D2-8613210E4C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40B59A32-5F93-42A0-A1D2-8613210E4C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40B59A32-5F93-42A0-A1D2-8613210E4C8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
