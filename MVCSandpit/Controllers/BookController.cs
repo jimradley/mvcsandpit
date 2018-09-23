@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using MVCSandpit.Data.Database;
 using MVCSandpit.Data.Model;
+using System.Threading.Tasks;
 
 namespace MVCSandpit.Controllers
 {
@@ -16,19 +17,19 @@ namespace MVCSandpit.Controllers
         private BooksDb db = new BooksDb();
 
         // GET: Books
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
-            return View(db.MyProperty.ToList());
+            return View(await db.MyProperty.ToListAsync());
         }
 
         // GET: Books/Details/5
-        public ActionResult Details(int? id)
+        public async Task<ActionResult> Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Book book = db.MyProperty.Find(id);
+            Book book = await db.MyProperty.FindAsync(id);
             if (book == null)
             {
                 return HttpNotFound();
@@ -47,12 +48,12 @@ namespace MVCSandpit.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Title,Genre")] Book book)
+        public async Task<ActionResult> Create([Bind(Include = "Id,Title,Genre")] Book book)
         {
             if (ModelState.IsValid)
             {
                 db.MyProperty.Add(book);
-                db.SaveChanges();
+                await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
 
