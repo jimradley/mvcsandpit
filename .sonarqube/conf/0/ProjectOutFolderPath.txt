@@ -1,0 +1,1 @@
+C:\dev\mvcsandpit\mvcsandpit\.sonarqube\out\0

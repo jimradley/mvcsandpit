@@ -9,6 +9,7 @@ using System.Web.Mvc;
 using MVCSandpit.Data.Database;
 using MVCSandpit.Data.Model;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace MVCSandpit.Controllers
 {
@@ -20,6 +21,13 @@ namespace MVCSandpit.Controllers
         public async Task<ActionResult> Index()
         {
             return View(await db.MyProperty.ToListAsync());
+        }
+
+        public ActionResult Image(string id)
+        {
+            var dir = Server.MapPath("/Images");
+            var path = Path.Combine(dir, id + ".jpg"); //validate the path for security or use other means to generate the path.
+            return File(path, "image/jpeg");
         }
 
         // GET: Books/Details/5
