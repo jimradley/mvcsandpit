@@ -41,7 +41,7 @@ namespace MVCSandpit.Tests.Controllers
         [TestMethod]
         public void Contact()
         {
-            // Arrange
+            // Arrange - Change on Branch 2.
             HomeController controller = new HomeController();
 
             // Act
